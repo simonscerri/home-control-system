@@ -57,7 +57,7 @@ def checkTiming():
         if timeNow < afternoonCheck:
             #Create function to send alert
             print 'Time is less than 17:30 - Abnormal condition'
-            print ''
+            print 'Raise alert - send email'
             time.sleep(2)
             GPIO.output(LED, GPIO.LOW)
         else:
